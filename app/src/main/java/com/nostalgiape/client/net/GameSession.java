@@ -161,9 +161,6 @@ public class GameSession implements RakNetClient.Listener {
                 r.readInt(); // generator
                 r.readInt(); // gamemode
                 entityId = r.readInt();
-                r.readInt(); // spawnX
-                r.readInt(); // spawnY
-                r.readInt(); // spawnZ
                 playerX = r.readFloat();
                 playerY = r.readFloat();
                 playerZ = r.readFloat();

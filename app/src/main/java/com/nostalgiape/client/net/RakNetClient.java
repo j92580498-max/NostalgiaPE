@@ -229,7 +229,7 @@ public class RakNetClient {
     }
 
     private void handleDataPacket(byte[] buf, int len) {
-        ByteBuf r = new ByteBuf(buf);
+        ByteBuf r = new ByteBuf(java.util.Arrays.copyOf(buf, len));
         r.readByte();                 // datagram header id
         int seq = r.readTriad();
         // ACK this datagram
