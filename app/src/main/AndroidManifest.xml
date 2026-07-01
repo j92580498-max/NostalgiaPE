@@ -15,7 +15,7 @@
         android:hardwareAccelerated="true">
 
         <activity
-            android:name=".ui.MainMenuActivity"
+            android:name=".ui.TitleActivity"
             android:exported="true"
             android:screenOrientation="sensorLandscape"
             android:configChanges="orientation|keyboardHidden|screenSize">
